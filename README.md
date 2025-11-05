@@ -1,4 +1,6 @@
 ## Quick Image Saver
+Download: [Firefox Addon Page](https://addons.mozilla.org/en-US/firefox/addon/quick-image-saver/)
+
 
 A lightweight Firefox extension that allows quick and easy way to save images. 
 
