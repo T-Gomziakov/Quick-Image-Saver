@@ -17,5 +17,13 @@
   },
   "action": {
     "default_popup": "action/index.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@quick-image-saver.timofei-gomziakov",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
   }
 }

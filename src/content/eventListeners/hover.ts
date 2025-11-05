@@ -6,6 +6,7 @@ export default function listenToHovers(UserSettings: UserSettings): () => void {
   if (!UserSettings.downloadButtonSettings.isEnabled) return () => {};
   // Create the button element so that we don't have to re-render it every time we move the mouse on the image
   const btn = document.createElement("button");
+  if (!btn) throw new Error("Failed to create button element");
   btn.innerText = "Download";
   btn.style.position = "absolute";
   btn.style.height = "3rem";
@@ -55,7 +56,7 @@ export default function listenToHovers(UserSettings: UserSettings): () => void {
     }
   }
 
-  // Unfortunately, have to give this function a name so we can remove the event later
+  // Unfortunately, scroll event doesn't provide mouse position, so we wrap the function call
   function handleScroll() {
     handleMouseOver();
   }
