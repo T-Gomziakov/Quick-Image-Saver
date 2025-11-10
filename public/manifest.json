@@ -20,7 +20,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "@quick-image-saver.timofei-gomziakov",
+      "id": "@quick-image-saver-ext.timofei-gomziakov",
       "data_collection_permissions": {
         "required": ["none"]
       }

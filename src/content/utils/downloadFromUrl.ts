@@ -1,5 +1,6 @@
 export default function downloadFromUrl(imageUrl: string) {
   const image = new Image();
+  image.crossOrigin = "anonymous";
   image.src = imageUrl;
 
   // Wait until the image loads to initiate the download
